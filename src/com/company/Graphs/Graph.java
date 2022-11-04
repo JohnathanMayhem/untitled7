@@ -1,14 +1,18 @@
 package com.company.Graphs;
 
+import java.util.ArrayList;
+
 public interface Graph {
 
     void addVertex();
 
-    void addEdge();
+    void addEdge(Vertex v1, Vertex v2);
 
-    void deletVertex();
+    void deletVertex(int number);
 
-    void deletEdge();
+    void deletEdge(Edge e);
 
-    void buildGrid();
+    void deletEdgeOfVertex(Vertex v);
+
+    ArrayList<ArrayList<Integer>> buildGrid();
 }

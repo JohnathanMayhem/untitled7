@@ -5,28 +5,28 @@ import java.util.*;
 public class Vertex implements Comparable <Vertex> {
     Integer number;
 
-    ArrayList<Edge> edges;
+    //ArrayList<Edge> edges;
 
-    public Vertex(int number, ArrayList<Edge> edges) {
-        this.number = number;
-        this.edges = edges;
-    }
+//    public Vertex(int number, ArrayList<Edge> edges) {
+//        this.number = number;
+//        //this.edges = edges;
+//    }
 
     public Vertex(int number){
         this.number = number;
-        this.edges = new ArrayList<Edge>();
+        //this.edges = new ArrayList<Edge>();
     }
 
-    public void addEdge(Vertex v){
-        Vertex [] temp = {this, v};
-        Edge e = new Edge(Arrays.asList(temp));
-        this.edges.add(e);
-        v.edges.add(e);
-    }
+//    public void addEdge(Vertex v){
+//        Vertex [] temp = {this, v};
+//        Edge e = new Edge(Arrays.asList(temp));
+//        this.edges.add(e);
+//        v.edges.add(e);
+//    }
 
-    public void addEdge(Edge e){
-        this.edges.add(e);
-    }
+//    public void addEdge(Edge e){
+//        this.edges.add(e);
+//    }
 
     public int getNumber(){
         return this.number;
